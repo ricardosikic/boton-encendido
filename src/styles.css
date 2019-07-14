@@ -1,0 +1,20 @@
+#box {
+    padding-top: 10%;
+    padding-left: 27%;
+    width: 70%;
+    height: 400px;
+}
+
+.is-dark {
+    background: black;
+    transition: .5s ease-in;
+}
+
+.is-light {
+    background: yellow;
+    transition: .5s ease-in;
+}
+
+.light {
+    color: white;
+}
