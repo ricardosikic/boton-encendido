@@ -1,0 +1,11 @@
+#box, .red {
+    height: 200px;
+    width: 200px;
+    background: red;
+    transition: .5s ease-in-out;
+}
+
+.blue {
+    background: blue !important;
+    transition: .5s ease-in-out;
+}

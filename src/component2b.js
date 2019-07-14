@@ -1,4 +1,6 @@
 import React, { Fragment } from 'react';
+import './styles2.css';
+
 
 export class ChangeButton extends React.Component {
     state = {
@@ -16,6 +18,7 @@ export class ChangeButton extends React.Component {
         return(
             <Fragment>
                 <Button click={e => this.handleActive(e)} {...this.state}/>
+                <Box {...this.state}/>
             </Fragment>
         );
     }
@@ -27,6 +30,15 @@ const Button = (props) => {
     return(
         <Fragment>
             <button onClick={props.click}>{isActive ? 'on' : 'off'}</button>
+        </Fragment>
+    );
+}
+
+const Box = (props) => {
+    const {isActive} = props;
+    return(
+        <Fragment>
+            <div id='box' className={isActive ? 'blue' : 'red'}></div>
         </Fragment>
     );
 }
