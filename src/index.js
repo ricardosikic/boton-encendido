@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { Toggle } from './App';
+import { ChangeButton } from './component2b';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-ReactDOM.render(<Toggle />, document.getElementById('root'));
+ReactDOM.render(<ChangeButton />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
